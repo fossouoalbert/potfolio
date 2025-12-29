@@ -34,7 +34,7 @@ justify-content: end;
 .nav{
     background-color: transparent;
     backdrop-filter: blur(12px);
-    position: sticky;
+    position: fixed;
     z-index:1000;
     border-bottom:1px solid #1e1e1e;
     top: 0;
@@ -218,5 +218,6 @@ display: block;
     }
     
 }
+
 
 
