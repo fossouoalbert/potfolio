@@ -11,8 +11,8 @@
     --text-color: #c5c6c7;
 }
 body{
-background-color: var(--secondary-color);
-color: var(--text-color);
+background-color: #dfd1d1;
+color: #1f2833;
       font-size: 18px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
    padding: 0;
@@ -22,8 +22,8 @@ color: var(--text-color);
 
 }
 body.dark-theme{
-    background-color:#dfd1d1 ;
-    color: #1f2833 ;
+    background-color:var(--secondary-color) ;
+    color: var(--text-color) ;
 }
 .nav-button{
 align-items: end;
@@ -218,4 +218,5 @@ display: block;
     }
     
 }
+
 
