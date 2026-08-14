@@ -142,7 +142,7 @@
 
 <div class="form">
       CONTACTEZ-MOI
-     <form action="" method="post" class="contact-form">
+     <form action="" method="post" class="contact-form" id="contactForm">
             <div class="field-group">
              
                 <input type="text" name="nom" placeholder="nom complet" required>
@@ -158,7 +158,7 @@
             </div>
                      <div class="field-group">
                 <label>type de demande</label>
-            <select>
+            <select name="type">
                 <option>projet freelance</option>
                          <option>oppotunité de stage </option>
                              <option>collaboration </option>
@@ -169,7 +169,7 @@
             </div>
             <div class="field-group">
                 <label>votre besoin</label>
-                <textarea placeholder="Écrivez votre message..."></textarea>
+                <textarea name="message" placeholder="Écrivez votre message..."></textarea>
             </div>
 
             <div class="form-actions">
@@ -182,8 +182,41 @@
 <h6>    Fossouo silatchom yann albert  2026-Étudiant en génie logiciel</h6>
 
 </footer>
+
+<script>
+(function(){
+  // WhatsApp phone number with country code (Cameroon +237)
+  const phone = "237650316547";
+
+  const form = document.querySelector('.contact-form');
+  if (!form) return;
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    const formData = new FormData(form);
+    const name = formData.get('nom') || '';
+    const email = formData.get('mail') || '';
+    const tel = formData.get('tel') || '';
+    const type = formData.get('type') || '';
+    const message = formData.get('message') || '';
+
+    const text = [
+      'Nouveau message depuis le portfolio:',
+      'Nom: ' + name,
+      'Email: ' + email,
+      'Téléphone: ' + tel,
+      'Type: ' + type,
+      'Message: ' + message
+    ].join('\n');
+
+    const url = 'https://wa.me/' + phone + '?text=' + encodeURIComponent(text);
+    window.open(url, '_blank');
+    form.reset();
+  });
+})();
+</script>
+
 </body>
 
 </html>
-
 
