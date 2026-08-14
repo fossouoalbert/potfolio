@@ -8,51 +8,90 @@
 </head>
 
 <body class="dark-theme">
-    <nav class="nav">
-        <div class="nav-button">
-            <button id="change_mode">changer de mode</button>
-             <button id="change_langue">changer de langue</button>
-        </div>
-    </nav>
+    <!-- navbar removed per user request -->
     <div class="main">
-        <img src="WhatsApp Image 2025-10-29 à 11.54.22_d9741746.jpg" alt="Photo de FOSSOUO SILATCHOM yann albert"
+        <img class="profile-image" src="WhatsApp Image 2025-10-29 à 11.54.22_d9741746.jpg" alt="Photo de FOSSOUO SILATCHOM yann albert"
             width="200" height="250">
-        <h1 class="text">Developpeur web</h1>
+
         <h2>FOSSOUO SILATCHOM yann albert</h2>
-        <p>Le developpeur web est un professionnel qui conçoit, réalise et maintient des sites internet <br>ou des
-            applications web. Il peut travailler sur le front-end (partie visible par l'utilisateur) ou <br>le back-end
-            (partie serveur et base de données) ou les deux (full-stack).</p>
+                <h3 class="title">Developpeur fullstack</h3>
+        <p>Passionné des technologies web et mobiles performantes , je concois des solutions
+             digitales à travers l'architecture MVC et MVVM,les api-rest et les bases de données 
+             relationnelles.</p>
+
+            Mon objectif: transformer une idée en une veritable application fluide qui repond a un besoin
+             utilisateur.
               <div class="tel">
            <button><a href="https://github.com/fossouoalbert/site2.git"><img class="reseau" src="github-dark.png"></a></button>
              <button><a href="https://www.linkedin.com/in/albert-fossouo-0b1492332"><img class="reseau" src="linked.png"></a></button>
           
               </div>
-<button><a href="cv fossouo silatchom yann albert decembre 2025.pdf" download><img class="download" src="downloading.png"> <h3 class="cv">mon cv</h3></a>
-</button>
-    </div>
-    <div class="content1">
-        <h2>A PROPOS DE MOI</h2>
-        <p>
+<a class="download-btn" href="albert cv1.pdf" download>
+    <img class="download" src="downloading.png" alt="Télécharger le CV">
+   Mon CV
+</a>
 
-            Je m'appelle FOSSOUO SILATCHOM yann albert, je suis un developpeur web passionné par la création de
-            solutions numériques innovantes.
-            Avec une solide formation en informatique et plusieurs années d'expérience dans le développement web, je
-            maîtrise les technologies front-end et back-end. Mon objectif est de concevoir <br>des sites web
-            performants, intuitifs et adaptés aux besoins des utilisateurs.
-            En dehors du codage, j'aime explorer les nouvelles tendances technologiques et contribuer à des projets open
-            source.
-        </p>
+<a class="download-btn" href="albert cv1.pdf" download>
+   Mes projets
+</a>
+    </div>
+
+    <div class="floating-actions">
+        <a href="#mes-projets" class="floating-btn main-btn" aria-label="Voir mes projets">
+            <img class="floating-icon-img" src="downloading.png" alt="projets">
+            <span class="btn-label">Voir mes projets</span>
+        </a>
+        <a href="https://www.linkedin.com/in/albert-fossouo-0b1492332" target="_blank" rel="noopener" class="floating-btn linkedin-btn" aria-label="LinkedIn">
+            <img class="floating-icon-img" src="linked.png" alt="LinkedIn">
+            <span class="btn-label">LinkedIn</span>
+        </a>
+        <a href="https://github.com/fossouoalbert/site2.git" target="_blank" rel="noopener" class="floating-btn github-btn" aria-label="GitHub">
+            <img class="floating-icon-img" src="github-dark.png" alt="GitHub">
+            <span class="btn-label">GitHub</span>
+        </a>
+    </div>
+
+    <div class="content-formation" id="formation">
+        <h2>FORMATION</h2>
+        <div class="formation-grid">
+            <div class="card formation-card">
+                <span class="badge">2026</span>
+                <h3>BTS en Génie Logiciel</h3>
+                <p>En cours</p>
+            </div>
+
+            <div class="card formation-card">
+                <span class="badge">2024</span>
+                <h3>Baccalauréat C</h3>
+                <p>Obtenu</p>
+            </div>
+        </div>
+
+        <div class="langues">
+            <h2>LANGUES</h2>
+            <div class="langue-grid">
+                <div class="card langue-card">
+                    <h4>Français</h4>
+                    <p>Très bon niveau</p>
+                </div>
+                <div class="card langue-card">
+                    <h4>Anglais</h4>
+                    <p>Bon niveau</p>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="content2">
-        <h2>COMPETENCES</h2>
+        <h2>Stack technique</h2>
+        <div class="div"><p>une selection de technologies pour développer des systemes performants et 
+    robustes adaptés aux nouvelles technologies. je conscruit des applications web
+     ,des apiset de la base de donneé.  </p></div>
         <div class="container">
 
             <div class="container1">
-                <h3>Langages</h3>
+                      <h3>langages</h3>
                 <img src="php.png" alt="HTML" width="50" height="50">
-                php
-
             </div>
             <div class="container1">
                 <h3>Framework</h3>
@@ -66,11 +105,11 @@
             <div class="container1">
                 <h3>Autres technologies</h3>
                 <img src="github-dark.png" alt="Github" width="50" height="50">
-                Github
+           
                 <img src="vercel-original.png" alt="Vercel" width="50" height="50">
-                Vercel
+           
                 <img src="mysql.png" alt=" MySQL" width="50" height="50">
-                MySQL
+           
 
 
             </div>
@@ -79,51 +118,68 @@
 
     </div>
 
-    <div class="content3">
+    <div class="content3" id="mes-projets">
         <h2>MES PROJETS</h2>
-        <DIV class="">
-            <h3>Projet 1 : Site de portfolio personnel</h3>
-           
-            <p>Un site web pour présenter mes compétences, mes projets et mon parcours professionnel. <br>
-                Technologies utilisées : <span>HTML, CSS</span>.
-              
-            </p>
+        <div class="projects-grid">
+            <div class="card project-card">
+                <h3>Projet 1 : Site de portfolio personnel</h3>
+                <p>Un site web pour présenter mes compétences, mes projets et mon parcours professionnel.<br>
+                Technologies utilisées : <span>HTML, CSS</span>.</p>
+                                <a class="project-link" href="https://site2-beta-one.vercel.app" target="_blank" rel="noopener">Voir le projet</a>
+            </div>
 
-            <h3>Projet 2 : Site de prestation de services de nettoyage</h3>
-                   
-            <p>Un site web permettant aux utilisateurs de solliciter differents services de nettoyage pour leurs tâches
-                quotidiennes. <br>
-                Technologies utilisées : <span>HTML, CSS,php, MySQL</span>.<br>
-                <button><a href="https://site2-beta-one.vercel.app">le projet</a> </button>
-            </p>
-        </DIV>
+            <div class="card project-card">
+                <h3>Projet 2 : Site de prestation de services de nettoyage</h3>
+                <p>Un site web permettant aux utilisateurs de solliciter différents services de nettoyage pour leurs tâches
+                quotidiennes.<br>Technologies utilisées : <span>HTML, CSS, PHP, MySQL</span>.</p>
+                <a class="project-link" href="https://site2-beta-one.vercel.app" target="_blank" rel="noopener">Voir le projet</a>
+            </div>
+        </div>
 
     </div>
 
 <div class="form">
-        <h2>CONTACTEZ-MOI</h2>
-     <form action="" method="post">
-            <label>nom</label>
-<input type="text"name="nom"required><br>
-            <label>prenom</label>
-<input type="text"name="prenom"required><br>
+      CONTACTEZ-MOI
+     <form action="" method="post" class="contact-form">
+            <div class="field-group">
+             
+                <input type="text" name="nom" placeholder="nom complet" required>
+            </div>
 
-            <label>email</label>
-<input type="email"name="mail"required><br>
-<textarea placeholder="message"></textarea><br>
+            <div class="field-group">
+          
+                <input type="email" name="mail" placeholder="email" required>
+            </div>
+                     <div class="field-group">
+          
+                <input type="tel" name="tel" placeholder="telephone" required>
+            </div>
+                     <div class="field-group">
+                <label>type de demande</label>
+            <select>
+                <option>projet freelance</option>
+                         <option>oppotunité de stage </option>
+                             <option>collaboration </option>
+                                 <option>recommandation </option>
+                                     <option>oppotunité professionnelle </option>
+                                         <option>autre </option>
+            </select>
+            </div>
+            <div class="field-group">
+                <label>votre besoin</label>
+                <textarea placeholder="Écrivez votre message..."></textarea>
+            </div>
 
-<button onclick="showAlert()"> envoyer</button>
-<button type="reset">annuler</button>
+            <div class="form-actions">
+                <button type="submit" class="send-btn">Envoyer</button>
+                <button type="reset" class="reset-btn">Annuler</button>
+            </div>
 </form>
 </div>
-<script>
-  
-const mode= document.getElementById('change_mode');
-mode.onclick= function(){
-    mode=document.body.classList.toggle('dark-theme');
-}
+<footer>
+<h6>    Fossouo silatchom yann albert  2026-Étudiant en génie logiciel</h6>
 
-</script>
+</footer>
 </body>
 
 </html>
