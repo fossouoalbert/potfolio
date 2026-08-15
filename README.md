@@ -27,6 +27,7 @@ Ce portfolio est construit avec :
 - JavaScript
 - GitHub
 - Vercel
+  ()
 
 ## Fonctionnalités
 
